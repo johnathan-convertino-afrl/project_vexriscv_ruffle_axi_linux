@@ -1,0 +1,21 @@
+[submodule "hdl/util"]
+	path = hdl/util
+	url = https://github.com/johnathan-convertino-afrl/UTIL.git
+[submodule "hdl/project"]
+	path = hdl/project
+	url = https://github.com/johnathan-convertino-afrl/vexriscv_ruffle_axi_linux.git
+[submodule "hdl/ip/vexriscv"]
+	path = hdl/ip/vexriscv
+	url = https://github.com/johnathan-convertino-afrl/VexRiscv_fusesoc.git
+[submodule "hdl/ip/ad"]
+	path = hdl/ip/ad
+	url = https://github.com/johnathan-convertino-afrl/ad_hdl_fusesoc.git
+[submodule "hdl/ip/bus_block_ram"]
+	path = hdl/ip/bus_block_ram
+	url = https://github.com/johnathan-convertino-afrl/bus_block_ram.git
+[submodule "hdl/ip/dc_block_ram"]
+	path = hdl/ip/dc_block_ram
+	url = https://github.com/johnathan-convertino-afrl/dc_block_ram.git
+[submodule "hdl/sim"]
+	path = hdl/sim
+	url = https://github.com/johnathan-convertino-afrl/SIM.git
