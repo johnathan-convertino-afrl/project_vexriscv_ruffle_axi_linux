@@ -113,3 +113,18 @@ To pull all submodules use the following:
     ```
 
   <div style="page-break-after: always;"></div>
+
+  ### Generate bitstream
+
+0. Launch your file manager (nautilus) and navigate to the `project_vexriscv_ruffle_axi_linux` folder.
+1. Navigate to the `hdl` folder.
+2. Launch a terminal by right clicking in the folder and selecting `Open in Terminal`.
+    - Or navigate using cd command in terminal.
+3. Execute the build command:
+
+    ```
+    fusesoc run --target=nexys-a7-100t AFRL:project:ruffle_axi_linux:1.0.0
+    ```
+    - Bitstream will be found in `build/AFRL_project_ruffle_axi_linux_1.0.0/nexys-a7-100t-vivado/AFRL_project_ruffle_axi_linux_1.0.0.runs/impl_1/system.bit`
+  
+   <div style="page-break-after: always;"></div>
