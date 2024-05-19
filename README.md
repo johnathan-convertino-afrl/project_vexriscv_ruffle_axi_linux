@@ -39,7 +39,9 @@ Requirements:
 #### Git Stuff
 
 To pull all submodules use the following:
-  * git submodule update --force --init --recursive
+      ```
+      git submodule update --force --init --recursive
+      ```
 
 ### Setup Ubuntu Packages
 
