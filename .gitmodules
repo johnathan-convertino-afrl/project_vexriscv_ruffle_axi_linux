@@ -19,9 +19,6 @@
 [submodule "hdl/sim"]
 	path = hdl/sim
 	url = https://github.com/johnathan-convertino-afrl/SIM.git
-[submodule "sw/embeddedsw"]
-	path = sw/embeddedsw
-	url = https://github.com/Xilinx/embeddedsw.git
 [submodule "sw/openocd_riscv"]
 	path = sw/openocd_riscv
 	url = https://github.com/SpinalHDL/openocd_riscv.git
