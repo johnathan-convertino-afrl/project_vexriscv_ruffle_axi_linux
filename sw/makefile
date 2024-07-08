@@ -3,7 +3,7 @@ BINDIR	= bin
 OPENOCD_BIN 	= $(SRCDIR)/$(BINDIR)/openocd/bin/openocd
 RISV32_BIN	= $(SRCDIR)/$(BINDIR)/riscv/bin/riscv32-unknown-elf-gcc
 
-.PHONY: clean
+.PHONY: clean distclean
 
 all: $(OPENOCD_BIN) $(RISV32_BIN)
 
@@ -24,3 +24,6 @@ clean:
 	$(MAKE) $@ -C riscv-openocd/
 	$(MAKE) $@ -C riscv-gnu-toolchain/
 	rm -rf $(BINDIR)
+
+distclean:
+	$(MAKE) $@ -C riscv-gnu-toolchain/
