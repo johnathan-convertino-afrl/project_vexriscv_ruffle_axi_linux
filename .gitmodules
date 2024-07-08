@@ -19,3 +19,15 @@
 [submodule "hdl/sim"]
 	path = hdl/sim
 	url = https://github.com/johnathan-convertino-afrl/SIM.git
+[submodule "sw/embeddedsw"]
+	path = sw/embeddedsw
+	url = https://github.com/Xilinx/embeddedsw.git
+[submodule "sw/openocd_riscv"]
+	path = sw/openocd_riscv
+	url = https://github.com/SpinalHDL/openocd_riscv.git
+[submodule "sw/riscv-gnu-toolchain"]
+	path = sw/riscv-gnu-toolchain
+	url = https://github.com/riscv-collab/riscv-gnu-toolchain.git
+[submodule "sw/riscv-openocd"]
+	path = sw/riscv-openocd
+	url = https://github.com/riscv-collab/riscv-openocd.git
