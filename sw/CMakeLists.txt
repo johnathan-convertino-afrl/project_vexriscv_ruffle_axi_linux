@@ -7,8 +7,8 @@ cmake_minimum_required(VERSION 3.14)
 
 project(sw)
 
-if(NOT DEFINED BUILD_BAREMETAL_EXAMPLES)
-  set(BUILD_BAREMETAL_EXAMPLES OFF)
+if(NOT DEFINED BUILD_BAREMETAL)
+  set(BUILD_BAREMETAL OFF)
 endif()
 
 if(NOT DEFINED BUILD_LINUX)
@@ -19,12 +19,12 @@ set(BAREMETAL_CONFIG ${CMAKE_CURRENT_SOURCE_DIR}/riscv-gnu-toolchain/configure -
 
 include(ExternalProject)
 
-#ExternalProject_Add(riscv-gnu-toolchain
-  #SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/riscv-gnu-toolchain
-  #DOWNLOAD_COMMAND git submodule update --init --recursive ${CMAKE_CURRENT_SOURCE_DIR}/riscv-gnu-toolchain
-  #CONFIGURE_COMMAND ${BAREMETAL_CONFIG}
-  #BUILD_COMMAND ${MAKE}
-  #BUILD_IN_SOURCE 1)
+ExternalProject_Add(riscv-gnu-toolchain
+  SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/riscv-gnu-toolchain
+  DOWNLOAD_COMMAND git submodule update --init --recursive ${CMAKE_CURRENT_SOURCE_DIR}/riscv-gnu-toolchain
+  CONFIGURE_COMMAND ${BAREMETAL_CONFIG}
+  BUILD_COMMAND ${MAKE}
+  BUILD_IN_SOURCE 1)
 
 ExternalProject_Add(riscv-openocd
   SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/riscv-openocd
@@ -33,7 +33,7 @@ ExternalProject_Add(riscv-openocd
   BUILD_COMMAND ${MAKE}
   BUILD_IN_SOURCE 1)
 
-if(BUILD_BAREMETAL_EXAMPLES)
+if(BUILD_BAREMETAL)
   add_subdirectory(baremetal)
 endif()
 
