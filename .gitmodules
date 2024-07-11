@@ -25,6 +25,3 @@
 [submodule "sw/riscv-openocd"]
 	path = sw/riscv-openocd
 	url = https://github.com/riscv-collab/riscv-openocd.git
-[submodule "sw/baremetal/embeddedsw"]
-	path = sw/baremetal/embeddedsw
-	url = https://github.com/Xilinx/embeddedsw.git
